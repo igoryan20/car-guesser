@@ -24,10 +24,13 @@ body {
     color: #4C2FFF;
     width: 100%;
     margin-top: 2rem;
+    transition: background-color 0.5s, width 1s, height 1s;
 }
 
 .btn-start:hover {
     background-color: #AEA1FF;
+    width: 110%;
+    height: 90px;
 }
 
 .start-container {
@@ -70,6 +73,17 @@ body {
     margin: 0;
 }
 
+@keyframes app-header {
+    0% { color: #EC1C00 }
+    100%   { color: #150097 }
+}
+
+.app-header:hover {
+    animation-name: app-header;
+    animation-duration: 1s;
+    cursor: not-allowed;
+}
+
 .h2 {
     font-size: 20pt;
     margin: 0;
@@ -77,5 +91,25 @@ body {
 
 .pt-10 {
     padding-top: 10rem;
+}
+
+@keyframes favicon-start-move {
+    0%   { transform: translate(-200px, 200px) }
+    100% { transform: translate(0, 0) }
+}
+
+.favicon {
+    animation-name: favicon-start-move;
+    animation-duration: 4s;
+}
+
+@keyframes favicon-move {
+    0%   { transform: rotate(15deg) }
+    100% { transform: rotate(0deg) }
+}
+
+.favicon:hover {
+    animation-name: favicon-move;
+    animation-duration: 1s;
 }
 
