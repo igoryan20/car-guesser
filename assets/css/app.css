@@ -1,6 +1,8 @@
 body {
     background-image: url("../images/start-background.png");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100%;
 }
 
 @font-face {
@@ -13,14 +15,67 @@ body {
 }
 
 .btn-start {
-    width: 40%;
-    height: 50px;
+    height: 80px;
     background-color: #CDC5FF;
     cursor: pointer;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
+    font-size: 40px;
+    color: #4C2FFF;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .btn-start:hover {
     background-color: #AEA1FF;
 }
+
+.start-container {
+    margin-left: 12rem;
+    margin-top: 5rem;
+}
+
+.violet-color {
+    color: #6E56FF;
+}
+
+.violet-color-light {
+    color: #9D8DFF;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.ml-4 {
+    margin-left: 4rem;
+}
+
+.content-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.w-15 {
+    width: 15rem;
+    height: 15rem;
+}
+
+.h1 {
+    font-size: 50pt;
+    margin: 0;
+}
+
+.h2 {
+    font-size: 20pt;
+    margin: 0;
+}
+
+.pt-10 {
+    padding-top: 10rem;
+}
+
