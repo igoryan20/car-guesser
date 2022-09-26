@@ -1,10 +1,11 @@
 import React from "react";
+import StartPage from "../pages/StartPage";
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Application</h1>
+                <StartPage />
             </div>
         )
     }
